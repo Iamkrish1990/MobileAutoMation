@@ -18,7 +18,7 @@ public class TestBase {
 		
 	}
 	
-	public void initialization() throws MalformedURLException {
+	public AndroidDriver<AndroidElement> initialization() throws MalformedURLException {
 		
 		File f = new File("F:\\\\FinalProjectFolder\\\\MobileAutomation\\\\src\\\\test\\\\resources\\\\original.apk");
 		DesiredCapabilities cap=new DesiredCapabilities();
@@ -26,7 +26,7 @@ public class TestBase {
 		cap.setCapability(MobileCapabilityType.APP, f.getPath());
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub") , cap);
-		
+		return driver;
 	}
 
 }
