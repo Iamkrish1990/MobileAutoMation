@@ -1,4 +1,4 @@
-package SampleTesCase;
+package sampleTestCase;
 
 import java.net.MalformedURLException;
 
@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import testBase.TestBase;
