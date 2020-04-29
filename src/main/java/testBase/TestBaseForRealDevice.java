@@ -1,4 +1,5 @@
 package testBase;
+
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -11,20 +12,18 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class TestBase {
+public class TestBaseForRealDevice {
 	
-	
-	
-	public TestBase() 
+	public TestBaseForRealDevice()
 	{
 		
 	}
 	
-	public 	AndroidDriver<AndroidElement> initialization() throws MalformedURLException {
+public AndroidDriver<AndroidElement> initialization() throws MalformedURLException {
 		
 		File f = new File("F:\\\\FinalProjectFolder\\\\MobileAutomation\\\\src\\\\test\\\\resources\\\\original.apk");
 		DesiredCapabilities cap=new DesiredCapabilities();
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus_5X_API_29_x86");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
 		cap.setCapability(MobileCapabilityType.APP, f.getPath());
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
