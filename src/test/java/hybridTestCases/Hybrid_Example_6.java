@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -13,6 +14,8 @@ import org.testng.annotations.Test;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import testBase.TestBaseForHybridApp;
 import static io.appium.java_client.touch.TapOptions.tapOptions;
 import static io.appium.java_client.touch.offset.ElementOption.element;
@@ -93,7 +96,8 @@ public class Hybrid_Example_6 extends TestBaseForHybridApp{
 			System.out.println(context);
 		}
 		driver.context("WEBVIEW_com.androidsample.generalstore");
-		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("hello");
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("hello" , Keys.ENTER);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 	
 	}
 
