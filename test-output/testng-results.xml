@@ -2,28 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59655" started-at="2020-04-24T11:02:00Z" finished-at="2020-04-24T11:03:00Z">
+  <suite name="Default suite" duration-ms="46094" started-at="2020-04-30T20:27:48Z" finished-at="2020-04-30T20:28:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59655" started-at="2020-04-24T11:02:00Z" finished-at="2020-04-24T11:03:00Z">
-      <class name="SampleTesCase.FirstMobileScript">
-        <test-method status="PASS" signature="before()[pri:0, instance:SampleTesCase.FirstMobileScript@490ab905]" name="before" is-config="true" duration-ms="10" started-at="2020-04-24T11:02:00Z" finished-at="2020-04-24T11:02:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:SampleTesCase.FirstMobileScript@490ab905]" name="setUp" is-config="true" duration-ms="59620" started-at="2020-04-24T11:02:00Z" finished-at="2020-04-24T11:03:00Z">
+    <test name="Default test" duration-ms="46094" started-at="2020-04-30T20:27:48Z" finished-at="2020-04-30T20:28:34Z">
+      <class name="hybridTestCases.Hybrid_Example_6">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hybridTestCases.Hybrid_Example_6@2758fe70]" name="setUp" is-config="true" duration-ms="13608" started-at="2020-04-30T20:27:48Z" finished-at="2020-04-30T20:28:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="executeTest()[pri:0, instance:SampleTesCase.FirstMobileScript@490ab905]" name="executeTest" duration-ms="6" started-at="2020-04-24T11:03:00Z" finished-at="2020-04-24T11:03:00Z">
+        <test-method status="PASS" signature="executeTest()[pri:0, instance:hybridTestCases.Hybrid_Example_6@2758fe70]" name="executeTest" duration-ms="32464" started-at="2020-04-30T20:28:01Z" finished-at="2020-04-30T20:28:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:SampleTesCase.FirstMobileScript@490ab905]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-04-24T11:03:00Z" finished-at="2020-04-24T11:03:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- SampleTesCase.FirstMobileScript -->
+      </class> <!-- hybridTestCases.Hybrid_Example_6 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
